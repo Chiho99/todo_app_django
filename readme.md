@@ -14,39 +14,39 @@ $ django-admin startproject todoproject .
 $ python manage.py startapp todo
 
 ### todoproject/settings.py
-TEMPLATES = [
-        ...
-        'DIRS': [BASE_DIR / 'templates'],
-        ...
+TEMPLATES = [<br>
+        ...<br>
+        'DIRS': [BASE_DIR / 'templates'],<br>
+        ...<br>
 ]
 
 ### manage.pyと同じ階層にtemplatesディレクトリをつくる
 $ mkdir templates
 
 ### todoproject/settings.pyにAppを追加
-INSTALLED_APPS = [
-    ...
-    'todo.apps.TodoConfig',
+INSTALLED_APPS = [<br>
+    ...<br>
+    'todo.apps.TodoConfig',<br>
 ]
 
 ### todoproject/urls.pyでurlの繋ぎ込み
-from django.contrib import admin
-from django.urls import path, include
+from django.contrib import admin<br>
+from django.urls import path, include<br>
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('todo.urls'))
+urlpatterns = [<br>
+    path('admin/', admin.site.urls),<br>
+    path('', include('todo.urls'))<br>
 ]
 
 ### todoディレクトリにurls.pyをつくる
 $ touch urls.py
 
 ### todo/urls.pyにadmin追加
-from django.contrib import admin
-from django.urls import path, include
+from django.contrib import admin<br>
+from django.urls import path, include<br>
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
+urlpatterns = [<br>
+    path('admin/', admin.site.urls),<br>
 ]
 
 ### サーバ立てる
@@ -54,7 +54,7 @@ $ python manage.py runserver
 
 ### Migration filesつくる
 $ python manage.py makemigrations
-or
+<br>or<br>
 $ python manage.py makemigrations todo
 
 ### データベースへの書き込み(migrate実行、テーブル作成)
@@ -64,11 +64,13 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 
 ### CRUD機能テンプレート
-Create : CreateView
-Read: ListView, DAtailView
-Update: UpdateView
-Delete: DeleteView
+Create : CreateView<br>
+Read: ListView, DAtailView<br>
+Update: UpdateView<br>
+Delete: DeleteView<br>
 
-### ListView
-{% %} : 複雑な処理
-{{}} : データ
+### CRUD-R ListView
+{% %} : 複雑な処理<br>
+{{}} : データ<br>
+
+### CRUD-R DetailView
