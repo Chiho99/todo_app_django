@@ -62,3 +62,9 @@ $ python manage.py migrate
 
 ### superuserを作成
 $ python manage.py createsuperuser
+
+## CRUD機能テンプレート
+Create : CreateView
+Read: ListView, DAtailView
+Update: UpdateView
+Delete: DeleteView
