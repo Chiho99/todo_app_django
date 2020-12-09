@@ -74,3 +74,5 @@ Delete: DeleteView<br>
 {{}} : データ<br>
 
 ### CRUD-R DetailView
+パスでPKを指定<br>
+    path('detail/<int:pk>', TodoDetail.as_view())
