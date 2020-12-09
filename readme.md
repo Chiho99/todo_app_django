@@ -49,6 +49,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
+### サーバ立てる
+$ python manage.py runserver
+
 ### Migration filesつくる
 $ python manage.py makemigrations
 or
@@ -56,3 +59,6 @@ $ python manage.py makemigrations todo
 
 ### データベースへの書き込み(migrate実行、テーブル作成)
 $ python manage.py migrate
+
+### superuserを作成
+$ python manage.py createsuperuser
