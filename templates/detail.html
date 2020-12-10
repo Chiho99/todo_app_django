@@ -1,16 +1,15 @@
 {% extends 'base.html' %}
 
 {% block header %}
-<div class="alert alert-secondary" role="alert">
-  A simple secondary alert—check it out!
+<div class="alert alert-secondary div_top" role="alert">
+  TodoList - Detail
 </div>
 {% endblock header %}
 
 {% block content %}
-<div class="alert alert-info" role="alert">
- {{ object.title }}
-</div>
-<div class="alert alert-info" role="alert">
- {{ object.memo }}
+<div class="alert alert-light border-{{ object.priority }} text-{{ object.priority }} border_weight" role="alert">
+  <h2>{{ object.title }}</h2>
+  <h5>{{ object.memo }}</h5>
+  <span class="text-danger">{{object.duedate}}</span>
 </div>
 {% endblock content %}

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-CHOICE = (('danger', 'high'), ('nomal', 'nomal'), ('primary', 'low'))
+CHOICE = (('danger', 'high'), ('secondary', 'nomal'), ('primary', 'low'))
 class TodoModel(models.Model):
     title = models.CharField(max_length=100)
     memo = models.TextField()
