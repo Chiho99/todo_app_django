@@ -107,9 +107,8 @@ urlpatterns = [<br>
 ### templates(htmlファイルを使い回す)
 <img src="templates/img/キャプチャ.PNG" alt="template_image">
 
-### aタグボタンのurlを設定
-##### <a href="{% url 'urlパスのname' オブジェクトのPK %}">
-<a href="{% url 'update' item.pk %}">編集画面へ
-<a href="{% url 'delete' item.pk %}">削除画面へ
-<a href="{% url 'detail' item.pk %}">詳細画面へ
-
+### aタグボタンのhref=""にurlを設定
+##### "{% url 'urlパスのname' オブジェクトのPK %}"
+編集画面 {% url 'update' item.pk %}
+削除画面 {% url 'delete' item.pk %}
+詳細画面 {% url 'detail' item.pk %}
