@@ -109,7 +109,7 @@ urlpatterns = [<br>
 
 ### aタグボタンのurlを設定
 ##### <a href="{% url 'urlパスのname' オブジェクトのPK %}">
-<a href="{% url 'update' item.pk %}">編集画面へ</a>
-<a href="{% url 'delete' item.pk %}">削除画面へ</a>
-<a href="{% url 'detail' item.pk %}">詳細画面へ</a>
+<a href="{% url 'update' item.pk %}">編集画面へ
+<a href="{% url 'delete' item.pk %}">削除画面へ
+<a href="{% url 'detail' item.pk %}">詳細画面へ
 
