@@ -75,7 +75,18 @@ Delete: DeleteView<br>
 
 ### CRUD-R DetailView
 パスでPKを指定<br>
-    path('detail/<int:pk>', TodoDetail.as_view())
+urlpatterns = [<br>
+    ...
+    path('detail/<int:pk>', TodoDetail.as_view())<br>
+]
+### CRUD-C CreateView
+パスを指定<br>
+urlpatterns = [<br>
+    ...<br>
+    path('create/', TodoCreate.as_view())<br>
+]<br>
+formタグの中には、{% csrf_token %}を入れる
+
 
 ### templates(htmlファイルを使い回す)
 <img src="templates/img/キャプチャ.PNG" alt="template_image">
