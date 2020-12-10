@@ -89,5 +89,13 @@ urlpatterns = [<br>
 ##### formタグの中
 {% csrf_token %}
 
+
+### CRUD-D DeleteView
+##### パスでPKを指定<br>
+urlpatterns = [<br>
+    ...<br>
+        path('delete/<int:pk>', TodoDelete.as_view(), name='delete')<br>
+]<br>
+
 ### templates(htmlファイルを使い回す)
 <img src="templates/img/キャプチャ.PNG" alt="template_image">
