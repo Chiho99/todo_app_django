@@ -65,7 +65,7 @@ $ python manage.py createsuperuser
 
 ### CRUD機能テンプレート
 Create : CreateView<br>
-Read: ListView, DAtailView<br>
+Read: ListView, DetailView<br>
 Update: UpdateView<br>
 Delete: DeleteView<br>
 
